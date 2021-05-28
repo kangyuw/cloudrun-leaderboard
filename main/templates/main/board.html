@@ -1,0 +1,27 @@
+{% extends "main/base.html" %}
+{% load render_table from django_tables2 %}
+{% block content %}
+
+<h1 class="mt-2">Welcome to POP Leaderboard</h1>
+<hr class="mt-0 mb-4">
+
+<div class="finished">
+<h2>Finished Players</h2>
+<hr class="mt-0 mb-4">
+
+{% render_table table_done %}
+
+</div>
+
+<div class="unfinished">
+<h2>Unfinished Players</h2>
+<hr class="mt-0 mb-4">
+
+{% render_table table_not %}
+
+</div>
+
+
+<a class="btn btn-primary btn-lg" href="/join">Join</a>
+
+{% endblock %}
