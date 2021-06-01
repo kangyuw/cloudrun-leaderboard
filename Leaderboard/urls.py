@@ -22,4 +22,5 @@ urlpatterns = [
     path('', main_views.board, name='index'),
     path('join', main_views.join, name='join'),
     path('board', main_views.board, name='board'),
+    path('verify', main_views.verify, name='verify'),
 ]

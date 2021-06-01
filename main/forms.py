@@ -1,7 +1,8 @@
 from django import forms
-from .models import Player
 
-class PlayerForm(forms.ModelForm):
-    class Meta:
-        model = Player
-        fields = ('username','url')
+class PlayerForm(forms.Form):
+    username = forms.CharField(label='username', max_length=32)
+    url = forms.URLField(label='url', max_length=200)
+
+class VerifyForm(forms.Form):
+    username = forms.CharField(label='username', max_length=32)
