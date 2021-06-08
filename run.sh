@@ -1,19 +1,12 @@
-<!--
-gcloud builds submit --config cloudmigrate.yaml \
-    --substitutions _INSTANCE_NAME=INSTANCE_NAME,_REGION=REGION
--->
-
-gcloud builds submit --config cloudmigrate.yaml \
-    --substitutions _INSTANCE_NAME=leaderboard,_REGION=us-east1
-
-<!--
+#!/bin/bash
+"""
 gcloud run deploy polls-service \
     --platform managed \
     --region REGION \
     --image gcr.io/PROJECT_ID/polls-service \
     --add-cloudsql-instances PROJECT_ID:REGION:INSTANCE_NAME \
     --allow-unauthenticated
--->
+"""
 
 gcloud run deploy leaderboard-service \
     --platform managed \
