@@ -1,12 +1,12 @@
 #!/bin/bash
-"""
-gcloud run deploy polls-service \
-    --platform managed \
-    --region REGION \
-    --image gcr.io/PROJECT_ID/polls-service \
-    --add-cloudsql-instances PROJECT_ID:REGION:INSTANCE_NAME \
-    --allow-unauthenticated
-"""
+
+# gcloud run deploy polls-service \
+#     --platform managed \
+#     --region REGION \
+#     --image gcr.io/PROJECT_ID/polls-service \
+#     --add-cloudsql-instances PROJECT_ID:REGION:INSTANCE_NAME \
+#     --allow-unauthenticated
+
 
 gcloud run deploy leaderboard-service \
     --platform managed \
