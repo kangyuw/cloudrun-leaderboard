@@ -34,7 +34,7 @@ def move():
       "flag": "jplOsDIaFLhcMRlS" //The 16-word random generated string
     }
     """
-    response = ""
+    response = "This is your python-flask microservice."
     
     return response
 

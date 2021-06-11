@@ -35,6 +35,6 @@ func handler(w http.ResponseWriter, req *http.Request) {
 			"flag": "jplOsDIaFLhcMRlS" //The 16-word random generated string
 		}
 	*/
-	resp := ""
+	resp := "This is your go microservice."
 	fmt.Fprint(w, resp)
 }

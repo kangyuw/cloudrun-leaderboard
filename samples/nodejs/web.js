@@ -13,7 +13,7 @@ app.post('/', function (req, res) {
     "flag": "jplOsDIaFLhcMRlS" //The 16-word random generated string
   }
   */
-  const response = "";
+  const response = "This is your nodejs microservice.";
   res.send(response);
 });
 
