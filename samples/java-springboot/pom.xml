@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.google</groupId>
-    <artifactId>cloudbowl-samples-java-springboot</artifactId>
+    <artifactId>leaderbaord-samples-java-springboot</artifactId>
     <packaging>jar</packaging>
     <version>0.0.0-SNAPSHOT</version>
 
