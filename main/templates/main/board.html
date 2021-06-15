@@ -15,9 +15,9 @@
 <h2>Finished Players</h2>
 <hr class="mt-0 mb-4">
 
-{% localtime on %}
+{% timezone 'US/Eastern' %}
 {% render_table table_done %}
-{% endlocaltime %}
+{% endtimezone %}
 
 </div>
 
@@ -25,9 +25,9 @@
 <h2>Unfinished Players</h2>
 <hr class="mt-0 mb-4">
 
-{% localtime on %}
+{% timezone 'US/Eastern' %}
 {% render_table table_not %}
-{% endlocaltime %}
+{% endtimezone %}
 
 </div>
 
