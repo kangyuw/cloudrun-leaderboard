@@ -1,14 +1,18 @@
 {% extends "main/base.html" %}
 {% load render_table from django_tables2 %}
 {% block content %}
+{% load tz %}
+{% localtime on %}
 
-<h1 class="mt-2">Welcome to POP Leaderboard</h1>
-<hr class="mt-0 mb-4">
+<div class="header">
+    <img src="img/rpt_logo.png" alt="rpt_logo" style="width:60px;"/>
+    <h1 class="mt-2">Welcome to GCP & River Point Technology Workshop Leaderboard</h1>
+    <hr class="mt-0 mb-4">
+</div>
 
 <div class="finished">
 <h2>Finished Players</h2>
 <hr class="mt-0 mb-4">
-
 {% render_table table_done %}
 
 </div>
@@ -18,11 +22,13 @@
 <hr class="mt-0 mb-4">
 
 {% render_table table_not %}
-
 </div>
 
 
 <a class="btn btn-primary btn-lg" href="/join">Join or Update</a>
 <a class="btn btn-success btn-lg" href="/verify">Verify Microservice</a>
 
+<!-- hyperlink and logo beneath -->
+
+{% endlocaltime %}
 {% endblock %}
