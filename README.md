@@ -20,8 +20,19 @@ It would take about 5-10 minutes to deploy the project on gcloud.
 
 ## Disclaimer
 
+### Hard-coded
+
 There are some hard-coded part scatter through following files:
 
-* ```cloudmigrate.yaml```: the ```substitutions``` section
-* ```build.sh```
-* ```run.sh```
+* ```./cloudmigrate.yaml```: the ```substitutions``` section
+* ```./build.sh```
+* ```./run.sh```
+* ```./Leaderboard/settings.py```
+
+### Local deploy
+
+Deploy the container by ```docker compose```
+
+Current iteration cannot be test locally, it require some changes in:
+
+* ```./Leaderboard/settings.py```
